@@ -1,0 +1,81 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Empty Dictionary results_dic - n items= 0
+
+Printing all key-value pairs in dictionary results_dic:
+Filename= Golden_retriever_01.jpg      Pet Label= golden retriever
+Filename= Coffee_mug_01.jpg      Pet Label= coffee mug
+Filename= Black_bear_01.jpg      Pet Label= black bear
+Filename= Golden_retriever_02.jpg      Pet Label= golden retriever
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:        Golden_retriever_01.jpg  label:           golden retriever
+ 2 key:              Coffee_mug_01.jpg  label:                 coffee mug
+ 3 key:              Black_bear_01.jpg  label:                 black bear
+ 4 key:        Golden_retriever_02.jpg  label:           golden retriever
+{'Golden_retriever_01.jpg': ['golden retriever', 'golden retriever', 1], 'Coffee_mug_01.jpg': ['coffee mug', 'cup', 0], 'Black_bear_01.jpg': ['black bear', 'american black bear', 0], 'Golden_retriever_02.jpg': ['golden retriever', 'golden retriever', 1]}
+
+     MATCH:
+
+       Golden_retriever_01.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
+
+       Golden_retriever_02.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
+
+ NOT A MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                            cup
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier:            american black bear
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+       Golden_retriever_01.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+       Golden_retriever_02.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                            cup  
+PetLabelDog: 0  ClassLabelDog: 0
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier:            american black bear  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match : 50.0
+pct_correct_dogs : 100.0
+pct_correct_breed : 100.0
+pct_correct_notdogs : 100.0
+
+** Total Elapsed Runtime: 0:0:0
